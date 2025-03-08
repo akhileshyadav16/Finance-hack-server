@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+
+# Environment variables
+.env
+.env.local
