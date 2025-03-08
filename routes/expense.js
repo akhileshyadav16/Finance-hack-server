@@ -20,5 +20,4 @@ router.put("/update-expense/:id",auth,updateExpense);
 router.delete("/delete-expense/:id",auth,deleteExpense);
 
 
-
 module.exports = router;
