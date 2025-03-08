@@ -3,10 +3,9 @@ const app = express();
 const cors = require("cors")
 const dbConnect = require("./config/database");
 require("dotenv").config();
-const expenseRoutes = require("./routes/finances");
-const cookieParser = require("cookie-parser");
+//const expenseRoutes = require("./routes/finances");
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 
 app.use(express.json());
@@ -18,8 +17,7 @@ app.use(cors({
 }));
 
 
-app.use(cookieParser());
-app.use("/api/v1",expenseRoutes);
+//app.use("/api/v1",expenseRoutes);
 
 
 
