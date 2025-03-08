@@ -4,6 +4,7 @@ const User = require("../models/user");
 exports.createExpense = async(req,res)=>{
     try{
         const {title,category,amount,date} = req.body;
+        console.log(req.body);
         if(!title || !category || !amount){
             return res.status(500).json({
                 success:false,
